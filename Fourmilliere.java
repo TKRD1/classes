@@ -1,5 +1,5 @@
+import java.util.*;
 public class Fourmilliere {
-    private final static int nbReine=1;
     private Fourmie [][] tab;
 
 
@@ -18,5 +18,14 @@ public class Fourmilliere {
 
     public Fourmie getElement(int type,int ele){
             return tab[type][ele];
+    }
+
+    public void afficheFourmilliere(){
+        for(int i=0;i<tab.length;i++){
+            for(int j=0;j<tab[i].length;j++){
+                System.out.println(tab[i][j]);
+            }
+            System.out.println();
+        }
     }
 }
